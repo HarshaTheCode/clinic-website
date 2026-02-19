@@ -19,7 +19,7 @@ export default function FaqSection() {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={`border rounded-xl transition-all duration-300 ${openIndex === index ? 'border-primary bg-teal-50/30' : 'border-slate-200 hover:border-teal-200'
+                            className={`border rounded-xl transition-all duration-300 ${openIndex === index ? 'border-primary bg-emerald-50/30' : 'border-slate-200 hover:border-emerald-200'
                                 }`}
                         >
                             <button

@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  /* Clinic Theme Colors */
-  --color-primary: #0891B2;       /* Teal-600 */
-  --color-primary-light: #E0F7FA; /* Cyan-50 */
-  --color-accent: #2DD4BF;        /* Teal-400 */
-  --color-background: #F8FDFD;    /* Custom Faint Teal */
+  /* Clinic Theme Colors - Premium Emerald Green */
+  --color-primary: #059669;
+  --color-primary-light: #ECFDF5;
+  --color-accent: #065f46;
+  --color-background: #FFFFFF;
   --color-surface: #FFFFFF;
-  --color-text: #1E293B;          /* Slate-800 */
-  --color-text-muted: #64748B;    /* Slate-500 */
-  --color-cta: #25D366;           /* WhatsApp Green */
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-cta: #059669;
 }
 
 @theme inline {
@@ -21,7 +21,7 @@
   --color-text: var(--color-text);
   --color-text-muted: var(--color-text-muted);
   --color-cta: var(--color-cta);
-  
+
   /* Extend fonts */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }

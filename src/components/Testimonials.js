@@ -6,7 +6,7 @@ export default function Testimonials() {
     return (
         <section id="reviews" className="py-24 bg-slate-50 relative overflow-hidden">
             {/* Background Decoration */}
-            <div className="absolute top-0 left-0 w-64 h-64 bg-teal-100/50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute top-0 left-0 w-64 h-64 bg-emerald-100/50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">

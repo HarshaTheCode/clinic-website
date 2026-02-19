@@ -64,7 +64,7 @@ export default function NavBar() {
                             href={buildWhatsAppUrl(clinicInfo.phone, "Hi, I'd like to book an appointment.")}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-primary hover:bg-teal-700 text-white px-5 py-2 rounded-full font-medium transition-transform hover:scale-105 flex items-center gap-2 text-sm shadow-lg shadow-teal-500/20"
+                            className="bg-primary hover:bg-emerald-700 text-white px-5 py-2 rounded-full font-medium transition-transform hover:scale-105 flex items-center gap-2 text-sm shadow-lg shadow-emerald-500/20"
                         >
                             <Phone size={16} />
                             Book Now

@@ -20,13 +20,13 @@ export default function ServicesGrid() {
                     {services.map((service, index) => (
                         <div
                             key={service.id}
-                            className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border border-slate-100 hover:border-teal-100 relative overflow-hidden"
+                            className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border border-slate-100 hover:border-emerald-100 relative overflow-hidden"
                         >
                             {/* Decorative gradient blob */}
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-teal-100/50"></div>
+                            <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-150 group-hover:bg-emerald-100/50"></div>
 
                             <div className="relative z-10">
-                                <div className="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <div className="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
                                     <service.icon size={28} />
                                 </div>
 
@@ -47,7 +47,7 @@ export default function ServicesGrid() {
                                         href={buildWhatsAppUrl(clinicInfo.phone, `I want to know more about ${service.title}`)}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-1 text-sm font-bold text-primary hover:text-teal-700 transition-colors"
+                                        className="flex items-center gap-1 text-sm font-bold text-primary hover:text-emerald-700 transition-colors"
                                     >
                                         Details <ArrowUpRight size={16} />
                                     </a>

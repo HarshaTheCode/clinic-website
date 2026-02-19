@@ -39,7 +39,7 @@ export default function SmileGallery() {
                                 {/* After Image */}
                                 <div className="relative h-full">
                                     <div className="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">AFTER</div>
-                                    <div className="w-full h-full bg-teal-100 flex items-center justify-center text-teal-400">
+                                    <div className="w-full h-full bg-emerald-100 flex items-center justify-center text-emerald-400">
                                         <span className="text-sm">After Image</span>
                                     </div>
                                     <img

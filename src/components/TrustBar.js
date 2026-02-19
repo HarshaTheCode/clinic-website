@@ -7,7 +7,7 @@ export default function TrustBar() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-100">
                 {trustStats.map((stat) => (
                     <div key={stat.id} className="flex flex-col items-center justify-center text-center px-4 group">
-                        <div className="mb-4 p-3 bg-teal-50 rounded-full text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <div className="mb-4 p-3 bg-emerald-50 rounded-full text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                             <stat.icon size={28} />
                         </div>
                         <h3 className="text-3xl font-extrabold text-slate-900 mb-1">{stat.value}</h3>

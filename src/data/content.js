@@ -1,15 +1,15 @@
 
-import { 
-  Stethoscope, 
-  Smile, 
-  Activity, 
-  Award, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  ShieldCheck, 
-  User, 
+import {
+  Stethoscope,
+  Smile,
+  Activity,
+  Award,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ShieldCheck,
+  User,
   Users,
   CalendarCheck
 } from 'lucide-react';
@@ -27,34 +27,34 @@ export const clinicInfo = {
     city: "Hyderabad",
     state: "Telangana",
     zip: "500081",
-    googleMapsLink: "https://maps.google.com/?q=Sri+Sai+Multi+Speciality+Clinic+Madhapur" 
+    googleMapsLink: "https://maps.google.com/?q=Sri+Sai+Multi+Speciality+Clinic+Madhapur"
   }
 };
 
 export const trustStats = [
-  { 
-    id: 1, 
-    label: "Years Experience", 
-    value: "15+", 
-    icon: Award 
+  {
+    id: 1,
+    label: "Years Experience",
+    value: "15+",
+    icon: Award
   },
-  { 
-    id: 2, 
-    label: "Happy Patients", 
-    value: "5,000+", 
-    icon: Users 
+  {
+    id: 2,
+    label: "Happy Patients",
+    value: "5,000+",
+    icon: Users
   },
-  { 
-    id: 3, 
-    label: "Successful Surgeries", 
-    value: "2,500+", 
-    icon: Activity 
+  {
+    id: 3,
+    label: "Successful Surgeries",
+    value: "2,500+",
+    icon: Activity
   },
-  { 
-    id: 4, 
-    label: "5-Star Reviews", 
-    value: "450+", 
-    icon: ShieldCheck 
+  {
+    id: 4,
+    label: "5-Star Reviews",
+    value: "450+",
+    icon: ShieldCheck
   },
 ];
 
@@ -106,7 +106,7 @@ export const services = [
 export const galleryImages = [
   {
     id: 1,
-    before: "/images/gallery/case1-before.jpg", 
+    before: "/images/gallery/case1-before.jpg",
     after: "/images/gallery/case1-after.jpg",
     title: "Smile Makeover",
     description: "Complete transformation with veneers and whitening."
@@ -128,7 +128,7 @@ export const doctorBio = {
   experience: "15 Years Experience",
   about: "Dr. Arjun Reddy is a renowned Prosthodontist with over 15 years of clinical experience. He specializes in cosmetic dentistry and full mouth rehabilitation. Known for his gentle approach, he is dedicated to providing pain-free dental care using the latest technology.",
   specialties: ["Implants", "Smile Design", "Full Mouth Rehab"],
-  image: "/images/doctor.jpg" 
+  image: "/images/doctor.jpg"
 };
 
 export const testimonials = [
@@ -152,6 +152,20 @@ export const testimonials = [
     review: "Great service and affordable prices. The staff is very polite and helpful.",
     rating: 4,
     date: "3 months ago"
+  },
+  {
+    id: 4,
+    name: "Kavitha Rao",
+    review: "The cosmetic dentistry results are amazing. I can't stop smiling! Dr. Arjun is a true artist.",
+    rating: 5,
+    date: "2 months ago"
+  },
+  {
+    id: 5,
+    name: "John David",
+    review: "Efficient and hygienic. Best dental clinic in Madhapur for sure. Highly recommended.",
+    rating: 5,
+    date: "1 week ago"
   }
 ];
 

@@ -1,6 +1,5 @@
 
 import { galleryImages } from '@/data/content';
-import Image from 'next/image';
 
 export default function SmileGallery() {
     return (

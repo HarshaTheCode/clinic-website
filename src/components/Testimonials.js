@@ -1,5 +1,6 @@
-import { testimonials } from '@/data/content';
+import { testimonials, clinicInfo } from '@/data/content';
 import { Quote, ArrowRight, Star } from 'lucide-react';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
 export default function Testimonials() {
     return (
@@ -28,10 +29,15 @@ export default function Testimonials() {
                                 We take pride in providing exceptional care to our patients. Here's what they have to say about their experience with Dr. Arjun and our team.
                             </p>
 
-                            <button className="group px-8 py-3.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold shadow-lg shadow-emerald-200 hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
-                                View More Stories
+                            <a
+                                href={buildWhatsAppUrl(clinicInfo.phone, "Hi, I'd like to share my experience at the clinic.")}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group px-8 py-3.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold shadow-lg shadow-emerald-200 hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+                            >
+                                Share Your Story
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -48,14 +54,12 @@ export default function Testimonials() {
                                     key={`${review.id}-${index}`}
                                     className="p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-100/50 hover:shadow-xl hover:border-emerald-100 hover:-translate-y-1 transition-all duration-300 flex gap-4 items-start group"
                                 >
-                                    {/* Avatar */}
+                                    {/* Avatar — local CSS initials */}
                                     <div className="flex-shrink-0">
-                                        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-slate-50 group-hover:border-emerald-100 transition-colors">
-                                            <img
-                                                src={`https://ui-avatars.com/api/?name=${review.name}&background=random&color=fff`}
-                                                alt={review.name}
-                                                className="w-full h-full object-cover"
-                                            />
+                                        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-slate-50 group-hover:border-emerald-100 transition-colors bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center">
+                                            <span className="text-white font-bold text-sm">
+                                                {review.name.split(' ').map(n => n[0]).join('')}
+                                            </span>
                                         </div>
                                     </div>
 

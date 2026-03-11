@@ -1,8 +1,7 @@
 
-import { services } from '@/data/content';
+import { services, clinicInfo } from '@/data/content';
 import { ArrowUpRight } from 'lucide-react';
 import { buildWhatsAppUrl } from '@/lib/whatsapp';
-import { clinicInfo } from '@/data/content';
 
 export default function ServicesGrid() {
     // Layout configuration: Top row (2 items), Bottom row (3 items)
@@ -30,6 +29,11 @@ export default function ServicesGrid() {
         {
             ...services.find(s => s.id === 'implants'),
             layoutClass: "md:col-span-1 lg:col-span-2",
+            variant: "default"
+        },
+        {
+            ...services.find(s => s.id === 'rootcanal'),
+            layoutClass: "md:col-span-2 lg:col-span-6",
             variant: "default"
         }
     ];

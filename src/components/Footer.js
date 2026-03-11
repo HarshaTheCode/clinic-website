@@ -71,7 +71,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p>&copy; {new Date().getFullYear()} {clinicInfo.name}. All rights reserved.</p>
+                    <p>&copy; 2025 {clinicInfo.name}. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

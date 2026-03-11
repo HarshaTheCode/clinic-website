@@ -2,7 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
-import { clinicInfo, services, faqs } from "@/data/content";
+import { clinicInfo, faqs } from "@/data/content";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
@@ -107,19 +107,6 @@ export default function RootLayout({ children }) {
           id="json-ld-faq"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-        {/* GA4 Placeholder */}
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              // gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
         />
       </body>
     </html>

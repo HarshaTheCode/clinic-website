@@ -42,8 +42,7 @@ export default function NavBar() {
                             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                                 <span className="text-white font-bold text-xl">S</span>
                             </div>
-                            <span className={`font-bold text-lg md:text-xl tracking-tight transition-colors ${scrolled ? 'text-slate-800' : 'text-slate-800' // Keeping text dark for readability if hero is light, adjust if hero is dark
-                                }`}>
+                            <span className="font-bold text-lg md:text-xl tracking-tight text-slate-800">
                                 {clinicInfo.name}
                             </span>
                         </Link>

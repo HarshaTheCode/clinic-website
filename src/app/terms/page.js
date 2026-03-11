@@ -10,7 +10,7 @@ export default function Terms() {
             <main className="flex-grow pt-32 pb-16 px-4">
                 <div className="max-w-3xl mx-auto prose prose-slate">
                     <h1 className="text-4xl font-bold text-slate-900 mb-8">Terms of Service</h1>
-                    <p className="text-slate-600 mb-4">Last Updated: {new Date().toLocaleDateString()}</p>
+                    <p className="text-slate-600 mb-4">Last Updated: March 2025</p>
 
                     <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">1. Medical Disclaimer</h2>
                     <p className="p-4 bg-red-50 border-l-4 border-red-500 text-red-700">

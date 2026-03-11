@@ -60,12 +60,15 @@ export default function HeroSection() {
 
                     <div className="pt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500">
                         <div className="flex -space-x-4">
-                            {/* Tiny placeholder avatars for social proof */}
-                            {[1, 2, 3, 4].map(i => (
-                                <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-xs overflow-hidden">
-                                    <img src={`https://ui-avatars.com/api/?name=User+${i}&background=random`} alt="User" />
-                                </div>
-                            ))}
+                            {/* Local CSS avatars — no external API calls */}
+                            {['R', 'S', 'A', 'K'].map((initial, i) => {
+                                const colors = ['bg-emerald-500', 'bg-teal-500', 'bg-cyan-500', 'bg-green-500'];
+                                return (
+                                    <div key={i} className={`w-10 h-10 rounded-full border-2 border-white ${colors[i]} flex items-center justify-center text-xs font-bold text-white`}>
+                                        {initial}
+                                    </div>
+                                );
+                            })}
                         </div>
                         <p>Trusted by <span className="font-bold text-slate-800">5000+</span> patients</p>
                     </div>

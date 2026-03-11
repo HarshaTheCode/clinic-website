@@ -95,8 +95,8 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased text-slate-800 bg-slate-50`}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className={`${inter.className} antialiased text-slate-800 bg-slate-50`} suppressHydrationWarning>
         {children}
         <Script
           id="json-ld-dentist"

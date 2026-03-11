@@ -19,7 +19,7 @@ export const clinicInfo = {
   doctor: "Dr. Arjun Reddy",
   tagline: "Your Smile, Our Passion",
   description: "Comprehensive dental care with a gentle touch. State-of-the-art facility in Madhapur offering personalized treatments for the whole family.",
-  phone: "+919876543210", // Placeholder
+  phone: "+910000000000", // Dummy number for demo
   email: "contact@srisaidental.com",
   address: {
     street: "Plot No. 45, 1st Floor, Hi-Tech City Road",
